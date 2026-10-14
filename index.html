@@ -224,5 +224,22 @@
         </p>
     </form>
     
+    <form action="https://validator.w3.org/nu/" method="get">
+        <p>
+            <!-- url: un campo para direcciones web; comprueba que empiece por http:// o https:// -->
+            <label for="direccion">Dirección de la web:</label>
+            <input type="url" id="direccion" name="doc" value="https://diegosan85.github.io/tarea1_9_formularios/" size="50">
+        </p>
+
+        <p>
+            <input type="checkbox" id="codigo" name="showsource" value="yes">
+            <label for="codigo">Ver el código</label>
+        </p>
+
+        <p>
+            <input type="submit" value="Validar">
+        </p>
+    </form>
+    
 </body>
 </html>
