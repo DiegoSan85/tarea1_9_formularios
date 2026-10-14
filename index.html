@@ -49,6 +49,27 @@
                 <label for="telefono">Teléfono:</label>
                 <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}">
             </p>
+                        <p>
+                <!-- date: un campo para elegir una fecha con un calendario -->
+                <label for="nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="nacimiento" name="nacimiento">
+            </p>
+
+            <p>
+                <!-- file: un botón para elegir un archivo del ordenador -->
+                <label for="foto">Foto:</label>
+                <input type="file" id="foto" name="foto">
+            </p>
+
+            <p>
+                <!-- value: el valor que tiene el campo; aquí ya viene escrito y es lo que se envía -->
+                <!-- readonly: el campo se puede ver y se envía, pero no se puede cambiar -->
+                <label for="curso">Curso:</label>
+                <input type="text" id="curso" name="curso" value="2026-27" readonly>
+            </p>
+
+            <p>
+                <!-- disabled: el campo sale desactivado en
 
         </fieldset>
 
