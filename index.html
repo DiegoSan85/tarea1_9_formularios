@@ -122,10 +122,45 @@
                 <input type="time" id="hora" name="hora">
             </p>
 
-            <p>
+                   <p>
                 <!-- week: un campo para elegir una semana del año -->
-                <label
+                <label for="semana">Semana:</label>
+                <input type="week" id="semana" name="semana">
+            </p>
 
+            <p>
+                <!-- month: un campo para elegir un mes y un año -->
+                <label for="mes">Mes:</label>
+                <input type="month" id="mes" name="mes">
+            </p>
+
+            <p>
+                <!-- select: una lista desplegable de opciones para elegir -->
+                <!-- multiple: permite elegir varias opciones de la lista a la vez -->
+                <label for="modulos">Módulos:</label>
+                <select id="modulos" name="modulos" multiple>
+                    <!-- optgroup: agrupa varias opciones de la lista bajo un título -->
+                    <!-- label (en optgroup): el título del grupo, que se ve en la lista pero no se puede elegir -->
+                    <optgroup label="Primer curso">
+                        <!-- option: cada una de las opciones que se pueden elegir en la lista -->
+                        <!-- selected: deja esa opción ya elegida al abrir la página -->
+                        <option value="programacion" selected>Programación</option>
+                        <option value="entornos">Entornos de desarrollo</option>
+                        <option value="sistemas">Sistemas informáticos</option>
+                    </optgroup>
+                    <optgroup label="Segundo curso">
+                        <option value="cliente">Desarrollo web en entorno cliente</option>
+                        <option value="servidor">Desarrollo web en entorno servidor</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <!-- textarea: un cuadro de texto grande para escribir varias líneas -->
+                <!-- rows: cuántas líneas de alto tiene el cuadro; cols: cuántos caracteres de ancho -->
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="5" cols="40"></textarea>
+            </p>     
         </fieldset>
 
     </form>
