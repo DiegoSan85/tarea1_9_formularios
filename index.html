@@ -72,6 +72,31 @@
                 <!-- disabled: el campo sale desactivado en
 
         </fieldset>
+        
+        <fieldset>
+            <legend>Preferencias</legend>
+
+            <p>Turno:</p>
+            <p>
+                <!-- radio: un botón redondo para elegir una sola opción; los que tienen el mismo name forman un grupo -->
+                <input type="radio" id="manana" name="turno" value="manana">
+                <label for="manana">Mañana</label>
+                <input type="radio" id="tarde" name="turno" value="tarde">
+                <label for="tarde">Tarde</label>
+            </p>
+
+            <p>Intereses:</p>
+            <p>
+                <!-- checkbox: una casilla que se marca o desmarca; se pueden marcar varias del mismo grupo -->
+                <input type="checkbox" id="web" name="intereses" value="web">
+                <label for="web">Desarrollo web</label>
+                <input type="checkbox" id="videojuegos" name="intereses" value="videojuegos">
+                <label for="videojuegos">Videojuegos</label>
+                <input type="checkbox" id="redes" name="intereses" value="redes">
+                <label for="redes">Redes</label>
+            </p>
+
+        </fieldset>
 
     </form>
     
