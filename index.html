@@ -188,5 +188,23 @@
 
     </form>
     
+    <form action="https://es.wikipedia.org/w/index.php" method="get">
+        <p>
+            <!-- search: un campo pensado para escribir búsquedas -->
+            <!-- list: une el campo con un datalist, poniendo el mismo valor que el id del datalist -->
+            <label for="busqueda">Buscar en Wikipedia:</label>
+            <input type="search" id="busqueda" name="search" list="sugerencias">
+
+            <!-- datalist: una lista de sugerencias que salen al escribir en el campo; se puede escribir otra cosa -->
+            <datalist id="sugerencias">
+                <option value="Formulario web">
+                <option value="HTML">
+                <option value="Protocolo de transferencia de hipertexto">
+            </datalist>
+
+            <input type="submit" value="Buscar">
+        </p>
+    </form>
+    
 </body>
 </html>
