@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea 1.9 - Formularios HTML</title>
 </head>
+    <h2>¿Qué problema de seguridad descubres en el historial por haber enviado la inscripción con GET? ¿Qué método recomienda el artículo para un formulario como este y por qué?</h2>
+    <p>Al enviar con GET, todos los datos van en la URL, y el navegador guarda esa URL en el historial. Si busco en el historial, aparece la dirección completa con mi nombre, mi correo, mi teléfono y hasta la contraseña escrita tal cual, así que cualquiera que use el ordenador puede verlos. Además la URL se puede copiar, compartir o quedar guardada en los registros del servidor. Para un formulario como este, con datos personales y una contraseña, el artículo recomienda usar POST, porque los datos no van en la URL sino dentro de la petición, no se quedan en el historial y no tienen límite de tamaño. GET se deja para cosas como búsquedas, donde no importa que los datos se vean.</p>
 <body>
         <!-- form: agrupa los campos de un formulario y los envía todos juntos al pulsar un botón de envío -->
     <!-- action: la página a la que se mandan los datos; method: cómo se mandan (con get van en la URL) -->
